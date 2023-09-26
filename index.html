@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <p id="room-id">Room ID: -</p>
+  <button type="button" id="home-button">Home</button>
+  
+  <div class="home">
+    <button type="button" id="create-room-button">Create Room</button>
+    <br>
+    <input type="number" id="join-room-input">
+    <button type="button" id="join-room-button">Join Room</button>
+  </div>
+  
+  <div class="header">
+    <div class="players">
+      <div class="blue">
+        <h1>Blue: <span id="blue-score">0</span></h1>
+        <p>Moves: <span id="blue-moves">8</span></p>
+      </div>
+      <div class="red">
+        <h1>Red: <span id="red-score">0</span></h1>
+        <p>Moves: <span id="red-moves">8</span></p>
+      </div>
+    </div>
+    
+    <h1>Current Player: <span id="turn-player">Blue</span></h1>
+  </div>
+  
+  <div class="board"></div>
+  
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="modal-close" class="close">&times;</span>
+        <p id="modal-header-text"></p>
+      </div>
+      <div class="modal-body">
+        <p id="modal-body-blue"></p>
+        <p id="modal-body-red"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modal-footer-home-button">Home</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="error-modal">
+    <div class="error-modal-content">
+      <div class="modal-header">
+        <span id="error-modal-close" class="close">&times;</span>
+        <p id="error-modal-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
