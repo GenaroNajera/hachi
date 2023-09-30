@@ -128,7 +128,7 @@ wss.on('connection', ws => {
         roomID,
         color: 'blue',
         score: 0,
-        moves: 2
+        moves: 8
       };
 
       ws.send(JSON.stringify({
@@ -156,7 +156,7 @@ wss.on('connection', ws => {
           roomID: msg.roomID,
           color: 'red',
           score: 0,
-          moves: 2
+          moves: 8
         };
 
         ws.send(JSON.stringify({
