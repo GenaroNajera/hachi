@@ -1,7 +1,5 @@
 # hachi
 
-JavaScript multiplayer game concept using WebSockets.
-
 To play, clone the repo and go to the cloned directory.  
 Then, in the terminal, type
 ```
